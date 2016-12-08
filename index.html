@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Star Wars</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/justforfun-konami.js"></script>
+
+</head>
+<body>
+
+<main ng-app="myApp" ng-controller="HeroController">
+
+    <h1>Star Wars Heroes</h1>
+    <div class="container" ng-class="someclass">
+
+            <div class="col img">
+                <img src="img/photo.jpg" alt="photo">
+                <div class="group-buttons">
+                    <button  type="button"  ng-click="load(index-1)" class="prev" ng-disabled="index<=1" >PREV</button>
+                    <button  type="button" ng-click="load(index+1)" class="next" ng-disabled="index>=88" >NEXT</button>
+                </div>
+            </div>
+            <div class="col description">
+                <ul>
+                    <li ng-repeat="info in description">{{info}}</li>
+                </ul>
+            </div>
+            <div class="col films">
+                <ul>
+                    <li ng-repeat="film in films">{{film}}</li>
+                </ul>
+            </div>
+
+    </div>
+    <div class="preloader" ng-class="loader"></div>
+</main>
+
+
+
+</body>
+</html>
