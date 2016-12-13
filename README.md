@@ -1,0 +1,2 @@
+# angular-starwars
+- bower install
