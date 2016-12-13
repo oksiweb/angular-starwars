@@ -1,0 +1,22 @@
+{
+  "name": "git-starwars-anglular",
+  "homepage": "https://github.com/oksiweb/angular-starwars",
+  "authors": [
+    "Oksana <oksi.web@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "angular": "^1.6.0"
+  }
+}
