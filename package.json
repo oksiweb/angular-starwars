@@ -1,0 +1,9 @@
+{
+  "name": "angular-starwars",
+  "version": "0.0.1",
+  "description": "angular-starwars",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-bowercopy": "^1.2.4"
+  }
+}
