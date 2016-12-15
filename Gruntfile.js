@@ -10,13 +10,22 @@ module.exports = function(grunt) {
                     destPrefix: 'vendor'
                },
                files: {
-                    'angular.min.js': 'angular/angular.min.js',
+                    'angular/angular.min.js': 'angular/angular.min.js',
                },
            },
-       }
+       },
+    bowerInstall: {
+
+      target: {
+        src: [
+          'index.html',   // .html support...
+        ],
+      }
+    }
    });
 
    grunt.loadNpmTasks('grunt-bowercopy');
-   grunt.registerTask('default', ['bowercopy']);
+   grunt.loadNpmTasks('grunt-bower-install');;
+   grunt.registerTask('default', ['bowercopy','bowerInstall']);
 
 };
